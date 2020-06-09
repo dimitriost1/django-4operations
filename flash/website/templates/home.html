@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block 'content' %}
+<div class="jumbotron">
+  <h1 class="display-4 text-center text-monospace">Practice 4 operatrions!</h1>
+  <p class="lead text-center">In this website, 1st grade students can practice their abilities in 4 math operations.</p>
+  <hr class="my-4">
+  <p class="text-center">Choose an operation below:</p>
+  <div class="row justify-content-center">
+    <a class="btn btn-primary btn-lg font-weight-bold opbtn" href="{% url 'add' %}" role="button">+</a>
+    <a class="btn btn-success btn-lg font-weight-bold opbtn" href="{% url 'subtract' %}" role="button">-</a>
+    <a class="btn btn-danger btn-lg font-weight-bold opbtn" href="{% url 'multiply' %}" role=" button">x</a>
+    <a class="btn btn-warning btn-lg font-weight-bold opbtn" href="{% url 'divide' %}" role="button">/</a>
+  </div>
+
+</div>
+
+{% endblock %}
